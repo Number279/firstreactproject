@@ -5,6 +5,7 @@ import Name from './Name';
 import FunFact from './FunFact';
 import ThingsILike from './ThingsILike.js';
 import Top5Movies from './Top5Movies';
+import DynamicText from './DynamicText';
 //created components are imported as jsx elements, effectively html elements
 
 //const x = 4;
@@ -17,6 +18,8 @@ function App() {
       <FunFact />
       <ThingsILike />
       <Top5Movies/>
+      <DynamicText />
+
       
     </div>
   );
