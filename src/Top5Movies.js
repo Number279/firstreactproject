@@ -1,7 +1,9 @@
-import React from 'react';
-
-const Top5Movies = () => {
-const movies = [
+import React from 'react'
+function Top5Movies(props) {
+//    let itemList = props.movie.map((m)=>{
+//        return m
+//    })
+const movies =[
     {
       Title: "The Amazing Spiderman T4 Premiere Special",
       Year: 2012,
@@ -32,23 +34,17 @@ const movies = [
       Year: 2012,
       imdbID: "tt2339417",
     },
-  ];
-  
-  const title = movies.map(movies => 
-    movies.Title);
-  const Number1 = title.slice(0,1);
-  const Number2 = title.slice(1,2)
-  const Number3 = title.slice(2,3)
-  const Number4 = title.slice(3,4)
-  const Number5 = title.slice(4,5)
-    return(
-      <div><b>Number 1:</b> {Number1} 
-      <br /><b>Number 2:</b> {Number2} 
-      <br /><b>Number 3:</b> {Number3} 
-      <br /><b>Number 4:</b> {Number4} 
-      <br /><b>Number 5:</b> {Number5}
-      </div>
+  ]
+  let itemlist = movies.map((movie)=>{
+      return movie.Title
+  }).filter((val,idx)=>{
+     return idx < 3
+  }).map(n => <li>{n}</li>)
+console.log(itemlist)
+    return (
+        <div>
+            <ol>{itemlist}</ol>
+        </div>
     )
 }
-
 export default Top5Movies

@@ -6,6 +6,7 @@ import FunFact from './FunFact';
 import ThingsILike from './ThingsILike.js';
 import Top5Movies from './Top5Movies';
 import DynamicText from './DynamicText';
+import Example from './Example'
 //created components are imported as jsx elements, effectively html elements
 
 //const x = 4;
@@ -18,6 +19,7 @@ function App() {
       <FunFact />
       <ThingsILike />
       <Top5Movies/>
+      <Example />
       <DynamicText />
 
       
