@@ -1,5 +1,5 @@
 import "./App.css";
-import Layout from "./Layout";
+import Layout from "./components/Layout";
 //created components are imported as jsx elements, effectively html elements
 
 //const x = 4;

@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import React, { useEffect, useState } from 'react';
-import './App.css';
+import './DarkMode.css';
 import MyComponent from './MyComponent.js';
 import Name from './Name';
 import FunFact from './FunFact';
-import ThingsILike from './ThingsILike.js';
-import Top5Movies from './Top5Movies';
+import ThingsILike from '../ThingsILike.js';
+import Top5Movies from '../Top5Movies';
 import DynamicText from './DynamicText';
 import Example from './Example'
 //created components are imported as jsx elements, effectively html elements
