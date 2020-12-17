@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.dark-Mode {
+  background-color: black;
+}
+
+.darkText {
+  color: white
+}
